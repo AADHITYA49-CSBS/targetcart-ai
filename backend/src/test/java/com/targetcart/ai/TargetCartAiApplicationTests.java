@@ -1,10 +1,10 @@
 package com.targetcart.ai;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class TargetCartAiApplicationTests {
+import com.targetcart.ai.test.AbstractMySqlTest;
+
+class TargetCartAiApplicationTests extends AbstractMySqlTest {
 
     @Test
     void contextLoads() {
