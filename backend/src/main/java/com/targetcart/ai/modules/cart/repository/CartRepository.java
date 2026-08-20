@@ -12,6 +12,8 @@ public interface CartRepository extends JpaRepository<Cart, Long> {
 
     List<Cart> findByStatus(CartStatus status);
 
+    List<Cart> findByStatusOrderByAbandonedAtDesc(CartStatus status);
+
     List<Cart> findByUserId(Long userId);
 
     List<Cart> findByStatusAndAbandonedAtBefore(CartStatus status, LocalDateTime time);
